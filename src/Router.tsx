@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import { RegisterUserPage } from './pages';
+
 const router = createBrowserRouter([
   {
     path: '/new',
-    element: <>register</>,
+    element: <RegisterUserPage />,
   },
   {
     path: '/user',
