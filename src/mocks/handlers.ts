@@ -1,12 +1,12 @@
-import { rest } from "msw";
+import { rest } from 'msw';
 
 export const handlers = [
-  rest.get("/test", (req, res, ctx) => {
+  rest.get('/test', (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({
-        code: "SUCCESS",
-      })
+        code: 'SUCCESS',
+      }),
     );
   }),
 ];
