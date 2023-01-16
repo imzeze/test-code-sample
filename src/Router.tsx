@@ -4,6 +4,10 @@ import { RegisterUserPage } from './pages';
 
 const router = createBrowserRouter([
   {
+    path: '',
+    element: <>home</>,
+  },
+  {
     path: '/new',
     element: <RegisterUserPage />,
   },
